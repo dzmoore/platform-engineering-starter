@@ -15,8 +15,16 @@
   ],
   "shell": {
     "init_hook": [
-      "alias 'k'=\"$(which kubectl)\"",
-      "if [ -n \"$BASH_VERSION\" ]; then source <(kind completion bash); source <(kubectl completion bash); source <(helm completion bash); complete -F __start_kubectl k; source <(just --completions bash); source <(chainsaw completion bash); elif [ -n \"$ZSH_VERSION\" ]; then source <(kind completion zsh); source <(kubectl completion zsh); source <(helm completion zsh); compdef __start_kubectl k; source <(just --completions zsh); source <(chainsaw completion zsh); else echo 'Unknown shell'; fi"
+      "alias k=\"$(which kubectl)\"",
+      "if [ -n \"$BASH_VERSION\" ]; then export SHELL_NAME=bash; fi",
+      "if [ -n \"$ZSH_VERSION\" ]; then export SHELL_NAME=zsh; fi",
+      "eval $(kind completion $SHELL_NAME)",
+      "eval $(kubectl completion $SHELL_NAME)",
+      "eval $(helm completion $SHELL_NAME)",
+      "if [ -n \"$BASH_VERSION\" ]; then complete -F __start_kubectl k; fi",
+      "just --completions $SHELL_NAME > /tmp/just-completions.zsh && source /tmp/just-completions.zsh",
+      "eval $(chainsaw completion $SHELL_NAME)",
+      "if [ -n \"$ZSH_VERSION\" ]; then compdef __start_kubectl k; fi"
     ],
     "scripts": {
       "test": ["echo \"Error: no test specified\" && exit 1"]
