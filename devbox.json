@@ -15,8 +15,8 @@
   ],
   "shell": {
     "init_hook": [
-      "if [[ \"$SHELL\" == *\"bash\"* ]]; then bash devbox-init-bash.sh; fi",
-      "if [[ \"$SHELL\" == *\"zsh\"* ]]; then zsh devbox-init-zsh.sh; fi"
+      "if [[ \"$SHELL\" == *\"bash\"* ]]; then source \"$DEVBOX_PROJECT_ROOT/devbox-init-bash.sh\"; fi",
+      "if [[ \"$SHELL\" == *\"zsh\"* ]]; then source \"$DEVBOX_PROJECT_ROOT/devbox-init-zsh.sh\"; fi"
     ],
     "scripts": { }
   }
