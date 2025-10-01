@@ -145,6 +145,74 @@
         }
       }
     },
+    "fzf@latest": {
+      "last_modified": "2025-09-18T16:33:27Z",
+      "resolved": "github:NixOS/nixpkgs/f4b140d5b253f5e2a1ff4e5506edbf8267724bde#fzf",
+      "source": "devbox-search",
+      "version": "0.65.2",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/b13kq65h8bk32jqqyvjlafk9kc8ads4n-fzf-0.65.2",
+              "default": true
+            },
+            {
+              "name": "man",
+              "path": "/nix/store/ik5hy5569cs4p06132rvaiawx03a4zl1-fzf-0.65.2-man",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/b13kq65h8bk32jqqyvjlafk9kc8ads4n-fzf-0.65.2"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/218zzby0qzmvy25lwxm448phjfs1cjl7-fzf-0.65.2",
+              "default": true
+            },
+            {
+              "name": "man",
+              "path": "/nix/store/k0bvb82dn8lhmpnr0yjgmgi3s6080yhh-fzf-0.65.2-man",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/218zzby0qzmvy25lwxm448phjfs1cjl7-fzf-0.65.2"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/gpzrkb2knhnqk67b4yf46zxy1nnd0arl-fzf-0.65.2",
+              "default": true
+            },
+            {
+              "name": "man",
+              "path": "/nix/store/9jmgjm42g6p3w04r3nl4j87aiqf3gzcr-fzf-0.65.2-man",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/gpzrkb2knhnqk67b4yf46zxy1nnd0arl-fzf-0.65.2"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/gb0l7i1bfpjkp73b544igqw9h55xpkvb-fzf-0.65.2",
+              "default": true
+            },
+            {
+              "name": "man",
+              "path": "/nix/store/vwwll74j2y3rn5n3kw1yy4dv5qqlsg6l-fzf-0.65.2-man",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/gb0l7i1bfpjkp73b544igqw9h55xpkvb-fzf-0.65.2"
+        }
+      }
+    },
     "github:NixOS/nixpkgs/nixpkgs-unstable": {
       "last_modified": "2025-09-26T19:57:07Z",
       "resolved": "github:NixOS/nixpkgs/53614373268559d054c080d070cfc732dbe68ac4?lastModified=1758916627&narHash=sha256-fB2ISCc%2Bxn%2B9hZ6gOsABxSBcsCgLCjbJ5bC6U9bPzQ4%3D"
@@ -374,6 +442,54 @@
             }
           ],
           "store_path": "/nix/store/myld9sswhrl252bjrr60nl2ls9338vf3-kind-0.30.0"
+        }
+      }
+    },
+    "krew@latest": {
+      "last_modified": "2025-09-18T16:33:27Z",
+      "resolved": "github:NixOS/nixpkgs/f4b140d5b253f5e2a1ff4e5506edbf8267724bde#krew",
+      "source": "devbox-search",
+      "version": "0.4.5",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/bwyh53l5xiv3w6h9maa0ivyq0nff3pmg-krew-0.4.5",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/bwyh53l5xiv3w6h9maa0ivyq0nff3pmg-krew-0.4.5"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/dy83sd1bkv5jrclr2qk93llkck6cxk9z-krew-0.4.5",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/dy83sd1bkv5jrclr2qk93llkck6cxk9z-krew-0.4.5"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/avl1zdxha6pqzqpxizqsfqv545ysgf4v-krew-0.4.5",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/avl1zdxha6pqzqpxizqsfqv545ysgf4v-krew-0.4.5"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/7x6z1882zfmzkz5757li61r61lvlq6gf-krew-0.4.5",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/7x6z1882zfmzkz5757li61r61lvlq6gf-krew-0.4.5"
         }
       }
     },
