@@ -17,8 +17,10 @@
   ],
   "shell": {
     "init_hook": [
+      "if [ \"${-#*i}\" != \"$-\" ]; then",
       "case \"$SHELL\" in *bash*) source \"$DEVBOX_PROJECT_ROOT/devbox-init-bash.sh\";; esac",
       "case \"$SHELL\" in *zsh*) source \"$DEVBOX_PROJECT_ROOT/devbox-init-zsh.sh\";; esac",
+      "fi",
       "export PATH=\"${KREW_ROOT:-$HOME/.krew}/bin:$PATH\"",
       "krew update 1> /dev/null 2> /dev/null && krew install ns ctx 1> /dev/null 2> /dev/null"
     ],
