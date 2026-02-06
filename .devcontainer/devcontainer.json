@@ -6,7 +6,9 @@
   },
   "customizations": {
     "vscode": {
-      "settings": {},
+      "settings": {
+        "devbox.autoShellOnTerminal": false
+      },
       "extensions": [
         "jetpack-io.devbox"
       ]
