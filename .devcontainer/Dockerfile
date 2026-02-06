@@ -18,7 +18,7 @@ USER $DEVBOX_USER
 RUN wget --output-document=/dev/stdout https://nixos.org/nix/install | sh -s -- --no-daemon
 RUN . ~/.nix-profile/etc/profile.d/nix.sh
 
-ENV PATH="/home/${DEVBOX_USER}/.nix-profile/bin:$PATH"
+ENV PATH="/home/${DEVBOX_USER}/.local/bin:/home/${DEVBOX_USER}/.nix-profile/bin:$PATH"
 
 # Step 3: Installing devbox
 ENV DEVBOX_USE_VERSION=$DEVBOX_USE_VERSION
